@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextRequest</title>
+
+    <!-- Foundation -->
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons.css" />
+    <link href="css/postcode_styleguide.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href='http://pobox.herokuapp.com/css/postcode_main.css' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/modernizr.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="landing.html">SF DEM</a></h1>
+        </li>
+         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="active"><a href="plan_archive.html">Plan Archive</a></li>
+          <li class="active"><a href="new_event.html">New Plan</a></li>
+          <li class="active"><a href="plan_archive.html">My Plans</a></li>
+          <li class="active"><a href="#">Log Out</a></li>
+        </ul>
+      </section>
+    </nav>
+
+<div class="plan-archive">
+  <div class="row">
+    <div class="large-12 columns">
+      <div data-alert class="alert-box warning radius">
+      - 5/9/2015: the status of <a href="#">Totally Fun Run</a> was changed to revision requested<br>    
+      <a href="#" class="close">&times;</a>
+      
+      </div>
+
+    </div>  
+  </div>
+  <div class="row">
+    <div class="large-4 columns filter">
+      <label><i class="fi-magnifying-glass"></i>
+        <input type="text" placeholder="Event name" />
+      </label>
+      <div>
+        <label><h5>Status <i class="fi-info"></i></h5></label>
+        <input id="checkbox1" type="checkbox"><label for="checkbox1">Draft</label><br>
+        <input id="checkbox2" type="checkbox"><label for="checkbox2">Under Review</label><br>
+        <input id="checkbox2" type="checkbox"><label for="checkbox2">Revision Requested</label><br>      
+        <input id="checkbox2" type="checkbox"><label for="checkbox2">Approved</label>
+      </div>
+      <br> 
+      <div>
+        <label><h5>Event Type</h5></label>
+        <input id="checkbox1" type="checkbox"><label for="checkbox1">Concert or Musical Festival</label><br>
+        <input id="checkbox2" type="checkbox"><label for="checkbox2">Atheltic or Sporting Event</label><br>
+        <input id="checkbox2" type="checkbox"><label for="checkbox2">Outside: Parade, Block Party, or Fair</label><br>      
+        <input id="checkbox2" type="checkbox"><label for="checkbox2">Conference or Convention</label>
+      </div>
+      <br> 
+      <div>
+        <label><h5>Crowd Size <i class="fi-info"></i></h5></label>
+        <input id="checkbox1" type="checkbox"><label for="checkbox1">Under 2,500</label><br>
+        <input id="checkbox2" type="checkbox"><label for="checkbox2">2,500 to 15,500</label><br>
+        <input id="checkbox2" type="checkbox"><label for="checkbox2">15,500 to 50,000</label><br>      
+        <input id="checkbox2" type="checkbox"><label for="checkbox2">Over 50,000</label>
+      </div> 
+      <br>
+      <div>
+        <label><h5>Alcohol Served <i class="fi-info"></i></h5></label>
+        <input id="checkbox1" type="checkbox"><label for="checkbox1">Yes</label><br>
+        <input id="checkbox2" type="checkbox"><label for="checkbox2">No</label><br>
+      </div>
+      <br>
+      <div class="row">
+        <div class="large-12 columns">
+          <h5>Event Date</h5>
+        </div>
+        <div class="large-6 columns">
+          <label>
+            <input type="text" placeholder="Start" />
+          </label>
+        </div>
+        <div class="large-6 columns">
+          <label>
+            <input type="text" placeholder="End" />
+          </label>
+        </div>         
+      </div>                        
+    </div>
+    <div class="large-8 columns">
+      <table style="width:100%; border: none;">
+        <tr>
+          <th>Event Name</th> 
+          <th>Status</th>
+          <th>Start Date</th> 
+          <th>Days</th> 
+          <th>Event Type</th>
+          <th>Crowd Size</th>                    
+        </tr>
+        <tr>
+          <td>Totally Fun Run</td> 
+          <td>Revision Requested</td>
+          <td>1/2/15</td>
+          <td>1</td> 
+          <td>Athletic</td>  
+          <td>3,500</td>                        
+        </tr>
+        <tr>
+          <td>Run for Your Life</td> 
+          <td>Revision Requested</td>
+          <td>4/2/15</td>
+          <td>1</td> 
+          <td>Athletic</td>  
+          <td>5,500</td>                        
+        </tr>  
+        <tr>
+          <td>Inside Lands</td> 
+          <td>Draft</td>
+          <td>1/2/15</td>
+          <td>1</td> 
+          <td>Concert</td>  
+          <td>12,500</td>                        
+        </tr>                                         
+      </table>
+    </div>       
+  </div>  
+</div>  
+
+
+    <!-- Foundation js -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

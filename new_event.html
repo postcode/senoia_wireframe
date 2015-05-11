@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Senoia</title>
+
+    <!-- Foundation -->
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons.css" />
+    <link href="css/postcode_styleguide.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href='http://pobox.herokuapp.com/css/postcode_main.css' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/modernizr.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="landing.html">SF DEM</a></h1>
+        </li>
+         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="active"><a href="plan_archive.html">Plan Archive</a></li>
+          <li class="active"><a href="new_event.html">New Plan</a></li>
+          <li class="active"><a href="plan_archive.html">My Plans</a></li>
+          <li class="active"><a href="#">Log Out</a></li>
+        </ul>
+      </section>
+    </nav>
+  <div class="new-event">  
+    <div class="row landing">
+      <div class="large-10 columns">
+        <h1>Post-Punk in the Park</h1>
+      </div>  
+      <div class="large-2 columns">
+        <h6>Last Updated</h6>
+        <p>May 6, 2015</p>
+      </div>
+    </div> 
+    <br>
+    <div class="row">
+      <div class="large-9 columns">
+        <ul class="button-group radius">
+          <li><a href="#" class="button">Draft</a></li>
+          <li><a href="#" class="button">Submitted</a></li>
+          <li><a href="#" class="button">Revision</a></li>
+          <li><a href="#" class="button">Under Review</a></li>
+          <li><a href="#" class="button">Approved</a></li>          
+        </ul>
+      </div> 
+      <div class="large-3 columns"> 
+        <a href="#" class="button tiny radius" style="background: gray;">Post Event<br>Treatment Report</a>
+      </div>         
+    </div> 
+    <br><br>
+    <div class="row">
+      <div class="large-6 columns">
+        <div class="row">
+          <div class="large-3 columns">
+            <h6>Event Type</h6>
+          </div>
+          <div class="large-9 columns">
+            <label>
+              <select>
+                <option value="husker">(Select Event Type)</option> 
+                <option value="husker">Concert</option>
+                <option value="starbuck">Sports</option>
+                <option value="hotdog">Festival</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-3 columns">
+            <h6>Event Date</h6>
+          </div>
+          <div class="large-3 columns">
+            <label>
+              <input type="text" placeholder="Start" />
+            </label>
+          </div>
+          <div class="large-3 columns">
+            <label>
+              <input type="text" placeholder="End" />
+            </label>
+          </div>
+          <div class="large-3 columns">
+            <a href="#" class="button radius tiny"><i class="fi-plus"></i> ADD </a>
+          </div>          
+        </div> 
+        <div class="row">
+          <div class="large-3 columns">
+            <h6>Crowd Size</h6>
+          </div>
+          <div class="large-8 columns">
+            <label>
+              <input type="text" placeholder="5000" />
+            </label>
+          </div>
+          <div class="large-1 columns">
+            <span data-tooltip aria-haspopup="true" class="has-tip" title="Crowd Size Updated: 4,000 <br><em>(5/8/15 by John Doe)</em>"><i class="fi-info"></i></span>         
+          </div>
+        </div>  
+        <div class="row">
+          <div class="large-12 columns">
+            <h6>Medical Assets</h6>
+          </div>
+          <div class="large-12 columns">
+            <img src="img/senoia_map.png">
+          </div>
+        </div> 
+        <div class="row">
+          <div class="large-12 columns new-event-info">
+            <h6>First Aid Stations</h6>
+            <table style="width:100%">
+              <tr>
+                <th></th>
+                <th>Location</th> 
+                <th>Lvl.</th>
+                <th>MDs</th> 
+                <th>RNs</th>
+                <th>EMTs</th> 
+                <th>AEDs</th> 
+                <th>Provider</th>                
+              </tr>
+              <tr>
+                <td><i class="fi-pencil"></i></td>
+                <td>Grove & Steiner</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+                <td>AMR</td>
+              </tr>
+              <tr>
+                <td><i class="fi-plus"></i></td>
+              </tr>              
+            </table>            
+          </div>
+        </div> 
+        <div class="row">
+          <div class="large-12 columns new-event-info">
+            <h6>Mobile Teams</h6>
+            <table style="width:100%">
+              <tr>
+                <th></th>
+                <th>Location</th> 
+                <th>Lvl.</th>
+                <th>Type</th> 
+                <th>AEDs</th>
+                <th>Provider</th>                
+              </tr>
+              <tr>
+                <td><i class="fi-pencil"></i></td>
+                <td>Grove & Scott</td> 
+                <td>BLS</td>
+                <td>foot</td>
+                <td>1</td>
+                <td>AMR</td>
+              </tr>
+              <tr>
+                <td><i class="fi-pencil"></i></td>
+                <td>Fulton & Pierce</td> 
+                <td>ALS</td>
+                <td>gator</td>
+                <td>1</td>
+                <td>AMR</td>
+              </tr>              
+              <tr>
+                <td><a href="#" data-reveal-id="myModal"><i class="fi-plus"></i></a></td>
+              </tr>              
+            </table>            
+          </div>
+        </div> 
+        <div id="myModal" class="reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+          <h2 id="modalTitle">Edit Mobile Team</h2>
+          <div class="row">
+            <div class="large-3 columns">
+              <h6>Location</h6>
+            </div>
+            <div class="large-7 columns">
+              <label>
+                <input type="text" placeholder="5000" />
+              </label>
+            </div>
+            <div class="large-2 columns">
+              <i class="fi-map"></i>
+            </div>            
+          </div> 
+          <div class="row">
+            <div class="large-3 columns">
+              <h6>Level</h6>
+            </div>
+            <div class="large-5 columns end">
+              <input type="radio" name="pokemon" value="ALS" id="pokemonRed"><label for="pokemonRed">ALS</label>
+              <input type="radio" name="pokemon" value="BLS" id="pokemonBlue"><label for="pokemonBlue">BLS</label>
+            </div>        
+          </div>   
+          <div class="row">
+            <div class="large-3 columns">
+              <h6>Type</h6>
+            </div>
+            <div class="large-9 columns end">
+              <input type="radio" name="mobile-type" value="Foot" id="pokemonRed"><label for="pokemonRed">Foot</label>
+              <input type="radio" name="mobile-type" value="Bike" id="pokemonBlue"><label for="pokemonBlue">Bike</label>
+              <input type="radio" name="mobile-type" value="Gator" id="pokemonBlue"><label for="pokemonBlue">Gator</label>              
+            </div>        
+          </div>  
+          <div class="row">
+            <div class="large-3 columns">
+              <h6>AEDS</h6>
+            </div>
+            <div class="large-2 columns end">
+            <label>
+              <select>
+                <option value="husker">1</option> 
+                <option value="husker">2</option>
+                <option value="starbuck">3</option>
+                <option value="hotdog">4</option>
+              </select>
+            </label>             
+            </div>        
+          </div> 
+          <div class="row">
+            <div class="large-3 columns">
+              <h6>Provider</h6>
+            </div>
+            <div class="large-9 columns end">
+            <label>
+              <select>
+                <option value="husker">Rock Medicine (RockMed)</option> 
+                <option value="husker">Somethign Else</option>
+              </select>
+            </label>             
+            </div>        
+          </div>
+          <div class="row">
+            <div class="large-3 large-offset-1 columns">
+              <h6>Organization</h6>
+            </div>
+            <div class="large-7 columns">
+              <label>
+                <input type="text" placeholder="Rock Medicine" />
+              </label>
+            </div>            
+          </div>  
+          <div class="row">
+            <div class="large-3 large-offset-1 columns">
+              <h6>Name</h6>
+            </div>
+            <div class="large-7 columns">
+              <label>
+                <input type="text" placeholder="Gordon Oldham" />
+              </label>
+            </div>            
+          </div>           
+          <div class="row">
+            <div class="large-3 large-offset-1 columns">
+              <h6>Phone</h6>
+            </div>
+            <div class="large-7 columns">
+              <label>
+                <input type="text" placeholder="(415) 555-5555" />
+              </label>
+            </div>            
+          </div>
+          <div class="row">
+            <div class="large-3 large-offset-1 columns">
+              <h6>Email</h6>
+            </div>
+            <div class="large-7 columns">
+              <label>
+                <input type="text" placeholder="rockmed@rockmed.com" />
+              </label>
+            </div>            
+          </div> 
+          <a href="#" class="button small radius"> Save</a> 
+          <a href="#"> Cancel</a> 
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div> 
+        <div class="row">
+          <div class="large-12 columns new-event-info">
+            <h6>Transport</h6>
+            <table style="width:100%">
+              <tr>
+                <th></th>
+                <th>Location</th> 
+                <th>Lvl.</th>
+                <th>Provider</th>                
+              </tr>
+              <tr>
+                <td><i class="fi-pencil"></i></td>
+                <td>Hayes & Scott</td> 
+                <td>ALS</td>
+                <td>AMR</td>
+              </tr>              
+              <tr>
+                <td><i class="fi-plus"></i></td>
+              </tr>              
+            </table>            
+          </div>
+        </div>  
+        <div class="row">                       
+          <div class="large-12 columns new-event-info">
+            <h6>Dispatch</h6>
+            <a href="#" class="button tiny radius"><i class="fi-plus"></i> Add Dispatch</a>
+          </div>     
+        </div> 
+      </div> 
+      <div class="large-5 large-offset-1 columns"> 
+        <div class="row">
+          <div class="large-12 columns new-event-info">
+            <h6>Event Plan Creator</h6>
+            <p>CONTACT</p>            
+            <p><i class="fi-torso"></i> John Doe</p>
+            <p><i class="fi-mail"></i> john@example.gov</p>
+            <p><i class="fi-telephone"></i> (123) 456-7890</p>     
+          </div>  
+          <div class="large-12 columns new-event-info">
+            <h6>Permitting Agency</h6>
+            <label>
+              <select>
+                <option value="husker">Parks and Recreation</option> 
+                <option value="husker">Planning</option>
+                <option value="starbuck">Police</option>
+                <option value="hotdog">Fire</option>
+              </select>
+            </label>
+            <p>PERMITTER</p>
+            <p><i class="fi-torso"></i> John Doe</p>
+            <p><i class="fi-mail"></i> john@example.gov</p>
+            <p><i class="fi-telephone"></i> (123) 456-7890</p>     
+          </div> 
+          <div class="large-12 columns new-event-info">
+            <h6>Post Event Treatment Report Creator</h6>
+            <p> 
+            <label><i class="fi-torso"></i> Name
+              <input type="text" placeholder="" />
+            </label></p>
+            <p> 
+            <label><i class="fi-mail"></i> Email
+              <input type="text" placeholder="" />
+            </label></p>
+            <p> 
+            <label><i class="fi-telephone"></i> Phone
+              <input type="text" placeholder="" />
+            </label></p>    
+          </div> 
+          <div class="large-12 columns new-event-info">
+            <h6>Supplementary Documents</h6>
+            <a href="#" class="button tiny radius"><i class="fi-plus"></i> Upload</a>     
+          </div> 
+          <div class="large-12 columns new-event-info">
+            <h6>Responsibility</h6>
+            <p>The medical group supervisor or the event coordinatoe must contact the dispatch supervisor at DEC to take responsibility for the event footprint at the beginning of each operational period and release responsibility for the footprint at the end of each operational period.</p>
+            <a href="#" class="button tiny radius">Accept</a>    
+          </div> 
+          <div class="large-12 columns new-event-info">
+            <h6>CPR & 911</h6>
+            <p>During the operational period of the event safety personnel will follow the existin communications plan and will contact 911 only if medicla needs overwhelm the capabilities of dedicated contracted medical assets. All medical interventions are the responsibility of the dedicatd/contracted medical staff.</p>
+            <a href="#" class="button tiny radius">Accept</a>    
+          </div> 
+          <div class="large-12 columns new-event-info">
+            <h6>Communications</h6>
+            <p>All event safety personnel will have a lost of contact info and will be communicating as specified in the Medical Assets section<br> In case of emergency during the event, the event coordinator can be reached at all times at:</p>
+            <label>
+              <input type="text" placeholder="(123) 456-7890" />
+            </label> 
+            <a href="#" class="button tiny radius">Accept</a>              
+          </div>                                             
+        </div>  
+      </div>         
+    </div> 
+    <br><br>
+
+    <div class="row">
+    <hr>
+    <br><br>
+      <div class="large-2 large-offset-4 columns">
+        <a href="#" class="button radius">SAVE</a>         
+      </div>
+      <div class="large-2 columns end">
+        <a href="#" class="button radius" style="background: orange;">SUBMIT</a>        
+      </div>      
+    </div>
+
+        
+  </div>      
+
+
+    <!-- Foundation js -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

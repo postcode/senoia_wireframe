@@ -1,0 +1,175 @@
+/* Web Fonts */
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
+
+body {
+
+}
+/* Color Palette */
+$postcodeblue: #86CBD9;
+$darkgray: #58585B;
+$lightgray: #E6E7E8;
+$promptlyblue: #789FD3;
+$recordtracred: #EC916F;
+$cityvoicegreen: #86CDB2;
+$orange: #EEA758;
+$yellow: #EDD364;
+
+
+/* Apps & Websites */
+.postcode{
+
+}
+.postcode .primary{
+	background: #86CBD9;
+}
+.postcode .secondary{
+	background: #58585B;
+}
+.postcode .tertiary{
+	background: #E6E7E8;
+}
+
+.promptly{
+
+}
+.promptly .primary{
+	background: #789FD3;
+}
+.promptly .secondary{
+	background: #EEA758;
+}
+.recordtrac{
+
+}
+.recordtrac .primary{
+	background: #EC916F;
+}
+.recordtrac .secondary{
+	background: #86CDB2;
+}
+.cityvoice{
+
+}
+.cityvoice .primary{
+	background: #86CDB2;
+}
+.cityvoice .secondary{
+	background: #EDD364;
+}
+
+/* Typography */
+h1 {
+	color: #58585B;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+h2{
+	color: #58585B;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 30px;
+}
+h3{
+	color: #58585B;
+	font-family: "Open Sans", Arial, sans-serif;
+    font-size: 26px;
+}
+h4{
+	color: #58585B;
+	font-family: "Open Sans", Arial, sans-serif;
+    font-size: 20px;
+}
+h5{
+	color: #58585B;
+	font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+}
+h6{
+	color: #58585B;
+	font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+}
+p {
+	color: #58585B;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+}
+small{
+	font-size: 9px;
+	font-weight: 300;
+	padding: 5px 10px;
+}
+.wht {
+	color: #FFF;
+}
+/* should double text */
+.grande{
+
+}
+.404error{
+	background-color: red; 
+}
+.heading{
+	border-bottom: 1px solid #58585B;
+	padding: 0px 0px 10px 0px;
+	margin: 40px 0px 20px 0px;
+}
+.lg-quote{
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 50px;
+	font-weight: 300;
+	padding: 0px 0px 20px 0px;
+}
+
+/* Links */
+a:link {
+    color: #86CBD9;
+}
+a:visited {
+    color: #86CBD9;
+}
+a:hover {
+	border-bottom: 1px solid #86CBD9;
+    color: #86CBD9;
+}
+a:active {
+    color: #86CBD9;
+}
+.wht a:link {
+	color: #FFF;
+}
+.wht a:visited {
+    color: #FFF;
+}
+.wht a:hover {
+    color: #FFF;
+    border-bottom: none;
+}
+.wht a:active {
+    color: #FFF;
+}
+.drk a:link {
+	color: #58585B;
+}
+.drk a:visited {
+    color: #58585B;
+}
+.drk a:hover {
+    color: #58585B;
+	border-bottom: 1px solid #58585B;
+}
+.drk a:active {
+    color: #58585B;
+}
+
+/* Buttons */
+.button{
+	color: #FFF;
+	font-family: 'Montserrat', Arial, sans-serif;  
+	margin: 0em 0em .5em 0em;
+}
+.button:visited{
+	color: #FFF;
+}
